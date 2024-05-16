@@ -29,66 +29,136 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            lblCorreoCliente = new Label();
+            txtCorreoCliente = new TextBox();
+            lblContraseñaCliente = new Label();
+            txtContraseña = new TextBox();
             groupBox2 = new GroupBox();
-            button1 = new Button();
-            button2 = new Button();
+            lblCorreoAdmin = new Label();
+            txtCorreoAdmin = new TextBox();
+            lblIdAdmin = new Label();
+            txtIDAdmin = new TextBox();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Location = new Point(192, 71);
+            groupBox1.Controls.Add(txtContraseña);
+            groupBox1.Controls.Add(lblContraseñaCliente);
+            groupBox1.Controls.Add(txtCorreoCliente);
+            groupBox1.Controls.Add(lblCorreoCliente);
+            groupBox1.Location = new Point(141, 52);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(197, 232);
+            groupBox1.Size = new Size(247, 281);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            groupBox1.Text = "Cliente";
+            // 
+            // lblCorreoCliente
+            // 
+            lblCorreoCliente.AutoSize = true;
+            lblCorreoCliente.Location = new Point(55, 63);
+            lblCorreoCliente.Name = "lblCorreoCliente";
+            lblCorreoCliente.Size = new Size(54, 20);
+            lblCorreoCliente.TabIndex = 0;
+            lblCorreoCliente.Text = "Correo";
+            // 
+            // txtCorreoCliente
+            // 
+            txtCorreoCliente.Location = new Point(58, 100);
+            txtCorreoCliente.Name = "txtCorreoCliente";
+            txtCorreoCliente.Size = new Size(125, 27);
+            txtCorreoCliente.TabIndex = 1;
+            // 
+            // lblContraseñaCliente
+            // 
+            lblContraseñaCliente.AutoSize = true;
+            lblContraseñaCliente.Location = new Point(61, 162);
+            lblContraseñaCliente.Name = "lblContraseñaCliente";
+            lblContraseñaCliente.Size = new Size(83, 20);
+            lblContraseñaCliente.TabIndex = 2;
+            lblContraseñaCliente.Text = "Contraseña";
+            // 
+            // txtContraseña
+            // 
+            txtContraseña.Location = new Point(57, 197);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(125, 27);
+            txtContraseña.TabIndex = 3;
             // 
             // groupBox2
             // 
-            groupBox2.Location = new Point(430, 77);
+            groupBox2.Controls.Add(txtIDAdmin);
+            groupBox2.Controls.Add(lblIdAdmin);
+            groupBox2.Controls.Add(txtCorreoAdmin);
+            groupBox2.Controls.Add(lblCorreoAdmin);
+            groupBox2.Location = new Point(418, 52);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(197, 226);
+            groupBox2.Size = new Size(240, 281);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
             // 
-            // button1
+            // lblCorreoAdmin
             // 
-            button1.Location = new Point(236, 348);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 2;
-            button1.Text = "registrar";
-            button1.UseVisualStyleBackColor = true;
+            lblCorreoAdmin.AutoSize = true;
+            lblCorreoAdmin.Location = new Point(36, 41);
+            lblCorreoAdmin.Name = "lblCorreoAdmin";
+            lblCorreoAdmin.Size = new Size(54, 20);
+            lblCorreoAdmin.TabIndex = 0;
+            lblCorreoAdmin.Text = "Correo";
             // 
-            // button2
+            // txtCorreoAdmin
             // 
-            button2.Location = new Point(446, 353);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 3;
-            button2.Text = "continuar";
-            button2.UseVisualStyleBackColor = true;
+            txtCorreoAdmin.Location = new Point(41, 84);
+            txtCorreoAdmin.Name = "txtCorreoAdmin";
+            txtCorreoAdmin.Size = new Size(125, 27);
+            txtCorreoAdmin.TabIndex = 1;
+            // 
+            // lblIdAdmin
+            // 
+            lblIdAdmin.AutoSize = true;
+            lblIdAdmin.Location = new Point(48, 133);
+            lblIdAdmin.Name = "lblIdAdmin";
+            lblIdAdmin.Size = new Size(24, 20);
+            lblIdAdmin.TabIndex = 2;
+            lblIdAdmin.Text = "ID";
+            // 
+            // txtIDAdmin
+            // 
+            txtIDAdmin.Location = new Point(49, 159);
+            txtIDAdmin.Name = "txtIDAdmin";
+            txtIDAdmin.Size = new Size(125, 27);
+            txtIDAdmin.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 451);
-            Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private GroupBox groupBox1;
+        private TextBox txtContraseña;
+        private Label lblContraseñaCliente;
+        private TextBox txtCorreoCliente;
+        private Label lblCorreoCliente;
         private GroupBox groupBox2;
-        private Button button1;
-        private Button button2;
+        private TextBox txtIDAdmin;
+        private Label lblIdAdmin;
+        private TextBox txtCorreoAdmin;
+        private Label lblCorreoAdmin;
     }
 }

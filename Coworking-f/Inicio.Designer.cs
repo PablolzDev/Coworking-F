@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            lblCorreoCliente = new Label();
-            txtCorreoCliente = new TextBox();
-            lblContraseñaCliente = new Label();
             txtContraseñaCliente = new TextBox();
-            lblCorreoAdmin = new Label();
-            txtCorreoAdmin = new TextBox();
-            lblIDAdmin = new Label();
-            txtIDAdmin = new TextBox();
-            lblContraseñaAdmin = new Label();
+            lblContraseñaCliente = new Label();
+            txtCorreoCliente = new TextBox();
+            lblCorreoCliente = new Label();
+            groupBox2 = new GroupBox();
             txtContraseñaAdmin = new TextBox();
+            lblContraseñaAdmin = new Label();
+            txtIDAdmin = new TextBox();
+            lblIDAdmin = new Label();
+            txtCorreoAdmin = new TextBox();
+            lblCorreoAdmin = new Label();
             btnRegistro = new Button();
             btnContinuar = new Button();
             groupBox1.SuspendLayout();
@@ -52,12 +52,48 @@
             groupBox1.Controls.Add(lblContraseñaCliente);
             groupBox1.Controls.Add(txtCorreoCliente);
             groupBox1.Controls.Add(lblCorreoCliente);
-            groupBox1.Location = new Point(143, 46);
+            groupBox1.Location = new Point(125, 34);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(233, 288);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(204, 216);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
+            // 
+            // txtContraseñaCliente
+            // 
+            txtContraseñaCliente.Location = new Point(42, 113);
+            txtContraseñaCliente.Margin = new Padding(3, 2, 3, 2);
+            txtContraseñaCliente.Name = "txtContraseñaCliente";
+            txtContraseñaCliente.Size = new Size(110, 23);
+            txtContraseñaCliente.TabIndex = 3;
+            // 
+            // lblContraseñaCliente
+            // 
+            lblContraseñaCliente.AutoSize = true;
+            lblContraseñaCliente.Location = new Point(42, 84);
+            lblContraseñaCliente.Name = "lblContraseñaCliente";
+            lblContraseñaCliente.Size = new Size(67, 15);
+            lblContraseñaCliente.TabIndex = 2;
+            lblContraseñaCliente.Text = "Contraseña";
+            // 
+            // txtCorreoCliente
+            // 
+            txtCorreoCliente.Location = new Point(42, 52);
+            txtCorreoCliente.Margin = new Padding(3, 2, 3, 2);
+            txtCorreoCliente.Name = "txtCorreoCliente";
+            txtCorreoCliente.Size = new Size(110, 23);
+            txtCorreoCliente.TabIndex = 1;
+            // 
+            // lblCorreoCliente
+            // 
+            lblCorreoCliente.AutoSize = true;
+            lblCorreoCliente.Location = new Point(42, 28);
+            lblCorreoCliente.Name = "lblCorreoCliente";
+            lblCorreoCliente.Size = new Size(43, 15);
+            lblCorreoCliente.TabIndex = 0;
+            lblCorreoCliente.Text = "Correo";
             // 
             // groupBox2
             // 
@@ -67,120 +103,96 @@
             groupBox2.Controls.Add(lblIDAdmin);
             groupBox2.Controls.Add(txtCorreoAdmin);
             groupBox2.Controls.Add(lblCorreoAdmin);
-            groupBox2.Location = new Point(427, 46);
+            groupBox2.Location = new Point(374, 34);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(241, 288);
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(211, 216);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
             // 
-            // lblCorreoCliente
+            // txtContraseñaAdmin
             // 
-            lblCorreoCliente.AutoSize = true;
-            lblCorreoCliente.Location = new Point(48, 37);
-            lblCorreoCliente.Name = "lblCorreoCliente";
-            lblCorreoCliente.Size = new Size(54, 20);
-            lblCorreoCliente.TabIndex = 0;
-            lblCorreoCliente.Text = "Correo";
-            // 
-            // txtCorreoCliente
-            // 
-            txtCorreoCliente.Location = new Point(48, 69);
-            txtCorreoCliente.Name = "txtCorreoCliente";
-            txtCorreoCliente.Size = new Size(125, 27);
-            txtCorreoCliente.TabIndex = 1;
-            // 
-            // lblContraseñaCliente
-            // 
-            lblContraseñaCliente.AutoSize = true;
-            lblContraseñaCliente.Location = new Point(48, 112);
-            lblContraseñaCliente.Name = "lblContraseñaCliente";
-            lblContraseñaCliente.Size = new Size(83, 20);
-            lblContraseñaCliente.TabIndex = 2;
-            lblContraseñaCliente.Text = "Contraseña";
-            // 
-            // txtContraseñaCliente
-            // 
-            txtContraseñaCliente.Location = new Point(48, 151);
-            txtContraseñaCliente.Name = "txtContraseñaCliente";
-            txtContraseñaCliente.Size = new Size(125, 27);
-            txtContraseñaCliente.TabIndex = 3;
-            // 
-            // lblCorreoAdmin
-            // 
-            lblCorreoAdmin.AutoSize = true;
-            lblCorreoAdmin.Location = new Point(52, 37);
-            lblCorreoAdmin.Name = "lblCorreoAdmin";
-            lblCorreoAdmin.Size = new Size(54, 20);
-            lblCorreoAdmin.TabIndex = 0;
-            lblCorreoAdmin.Text = "Correo";
-            // 
-            // txtCorreoAdmin
-            // 
-            txtCorreoAdmin.Location = new Point(52, 69);
-            txtCorreoAdmin.Name = "txtCorreoAdmin";
-            txtCorreoAdmin.Size = new Size(125, 27);
-            txtCorreoAdmin.TabIndex = 1;
-            // 
-            // lblIDAdmin
-            // 
-            lblIDAdmin.AutoSize = true;
-            lblIDAdmin.Location = new Point(52, 112);
-            lblIDAdmin.Name = "lblIDAdmin";
-            lblIDAdmin.Size = new Size(24, 20);
-            lblIDAdmin.TabIndex = 2;
-            lblIDAdmin.Text = "ID";
-            // 
-            // txtIDAdmin
-            // 
-            txtIDAdmin.Location = new Point(52, 151);
-            txtIDAdmin.Name = "txtIDAdmin";
-            txtIDAdmin.Size = new Size(125, 27);
-            txtIDAdmin.TabIndex = 3;
+            txtContraseñaAdmin.Location = new Point(46, 176);
+            txtContraseñaAdmin.Margin = new Padding(3, 2, 3, 2);
+            txtContraseñaAdmin.Name = "txtContraseñaAdmin";
+            txtContraseñaAdmin.Size = new Size(110, 23);
+            txtContraseñaAdmin.TabIndex = 5;
             // 
             // lblContraseñaAdmin
             // 
             lblContraseñaAdmin.AutoSize = true;
-            lblContraseñaAdmin.Location = new Point(52, 200);
+            lblContraseñaAdmin.Location = new Point(46, 150);
             lblContraseñaAdmin.Name = "lblContraseñaAdmin";
-            lblContraseñaAdmin.Size = new Size(83, 20);
+            lblContraseñaAdmin.Size = new Size(67, 15);
             lblContraseñaAdmin.TabIndex = 4;
             lblContraseñaAdmin.Text = "Contraseña";
             // 
-            // txtContraseñaAdmin
+            // txtIDAdmin
             // 
-            txtContraseñaAdmin.Location = new Point(52, 235);
-            txtContraseñaAdmin.Name = "txtContraseñaAdmin";
-            txtContraseñaAdmin.Size = new Size(125, 27);
-            txtContraseñaAdmin.TabIndex = 5;
+            txtIDAdmin.Location = new Point(46, 113);
+            txtIDAdmin.Margin = new Padding(3, 2, 3, 2);
+            txtIDAdmin.Name = "txtIDAdmin";
+            txtIDAdmin.Size = new Size(110, 23);
+            txtIDAdmin.TabIndex = 3;
+            // 
+            // lblIDAdmin
+            // 
+            lblIDAdmin.AutoSize = true;
+            lblIDAdmin.Location = new Point(46, 84);
+            lblIDAdmin.Name = "lblIDAdmin";
+            lblIDAdmin.Size = new Size(18, 15);
+            lblIDAdmin.TabIndex = 2;
+            lblIDAdmin.Text = "ID";
+            // 
+            // txtCorreoAdmin
+            // 
+            txtCorreoAdmin.Location = new Point(46, 52);
+            txtCorreoAdmin.Margin = new Padding(3, 2, 3, 2);
+            txtCorreoAdmin.Name = "txtCorreoAdmin";
+            txtCorreoAdmin.Size = new Size(110, 23);
+            txtCorreoAdmin.TabIndex = 1;
+            // 
+            // lblCorreoAdmin
+            // 
+            lblCorreoAdmin.AutoSize = true;
+            lblCorreoAdmin.Location = new Point(46, 28);
+            lblCorreoAdmin.Name = "lblCorreoAdmin";
+            lblCorreoAdmin.Size = new Size(43, 15);
+            lblCorreoAdmin.TabIndex = 0;
+            lblCorreoAdmin.Text = "Correo";
             // 
             // btnRegistro
             // 
-            btnRegistro.Location = new Point(191, 364);
+            btnRegistro.Location = new Point(167, 273);
+            btnRegistro.Margin = new Padding(3, 2, 3, 2);
             btnRegistro.Name = "btnRegistro";
-            btnRegistro.Size = new Size(125, 38);
+            btnRegistro.Size = new Size(109, 28);
             btnRegistro.TabIndex = 2;
             btnRegistro.Text = "Registrarse";
             btnRegistro.UseVisualStyleBackColor = true;
             // 
             // btnContinuar
             // 
-            btnContinuar.Location = new Point(479, 364);
+            btnContinuar.Location = new Point(419, 273);
+            btnContinuar.Margin = new Padding(3, 2, 3, 2);
             btnContinuar.Name = "btnContinuar";
-            btnContinuar.Size = new Size(125, 34);
+            btnContinuar.Size = new Size(109, 26);
             btnContinuar.TabIndex = 3;
             btnContinuar.Text = "Continuar";
             btnContinuar.UseVisualStyleBackColor = true;
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(btnContinuar);
             Controls.Add(btnRegistro);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Inicio";
             Text = "Inicio";
             groupBox1.ResumeLayout(false);

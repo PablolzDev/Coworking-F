@@ -16,5 +16,17 @@ namespace Coworking_f
         {
             InitializeComponent();
         }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            Registro frmRegistro = new Registro();
+            frmRegistro.Show();
+        }
+
+        private void btnContinuar_Click(object sender, EventArgs e)
+        {
+            SeleccionReservas frmSeleccionReservas = new SeleccionReservas();
+            frmSeleccionReservas.Show();
+        }
     }
 }

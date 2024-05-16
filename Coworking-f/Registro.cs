@@ -16,5 +16,11 @@ namespace Coworking_f
         {
             InitializeComponent();
         }
+
+        private void btnCrearPerfilCliente_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+        }
     }
 }

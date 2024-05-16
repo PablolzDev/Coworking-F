@@ -172,6 +172,7 @@
             btnRegistro.TabIndex = 2;
             btnRegistro.Text = "Registrarse";
             btnRegistro.UseVisualStyleBackColor = true;
+            btnRegistro.Click += btnRegistro_Click;
             // 
             // btnContinuar
             // 
@@ -182,12 +183,13 @@
             btnContinuar.TabIndex = 3;
             btnContinuar.Text = "Continuar";
             btnContinuar.UseVisualStyleBackColor = true;
+            btnContinuar.Click += btnContinuar_Click;
             // 
             // Inicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(700, 378);
             Controls.Add(btnContinuar);
             Controls.Add(btnRegistro);
             Controls.Add(groupBox2);

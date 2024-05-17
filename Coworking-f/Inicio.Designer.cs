@@ -197,6 +197,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Inicio";
             Text = "Inicio";
+            Load += Inicio_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

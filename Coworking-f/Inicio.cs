@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Coworking_f.Clases;
 
 namespace Coworking_f
 {
@@ -27,6 +28,12 @@ namespace Coworking_f
         {
             SeleccionReservas frmSeleccionReservas = new SeleccionReservas();
             frmSeleccionReservas.Show();
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            conexionBD.crearConexion();
+
         }
     }
 }

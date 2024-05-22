@@ -18,7 +18,7 @@ namespace Coworking_f.Clases
             //nombre de la base de datos CoworKing-f
             //ingresar el nombre del usuario del administrador de la base de datos: root
             //ingresar contraseña: en blanco
-            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1;database = coworkingf; Uid=root; pwd=Dar_3117941466;");
+            MySqlConnection conexion = new MySqlConnection("server = 127.0.0.1;database = coworkingf; Uid=root; pwd=Pablolopez12;");
             conexion.Open();
             return conexion;
         }

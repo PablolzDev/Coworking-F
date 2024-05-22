@@ -44,83 +44,96 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmUbicacion, clmFecha, clmTipoDeLugar });
-            dataGridView1.Location = new Point(172, 48);
+            dataGridView1.Location = new Point(197, 64);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(342, 150);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(391, 200);
             dataGridView1.TabIndex = 0;
             // 
             // clmUbicacion
             // 
             clmUbicacion.HeaderText = "Ubicacion";
+            clmUbicacion.MinimumWidth = 6;
             clmUbicacion.Name = "clmUbicacion";
+            clmUbicacion.Width = 125;
             // 
             // clmFecha
             // 
             clmFecha.HeaderText = "Fecha";
+            clmFecha.MinimumWidth = 6;
             clmFecha.Name = "clmFecha";
+            clmFecha.Width = 125;
             // 
             // clmTipoDeLugar
             // 
             clmTipoDeLugar.HeaderText = "Tipo de lugar";
+            clmTipoDeLugar.MinimumWidth = 6;
             clmTipoDeLugar.Name = "clmTipoDeLugar";
+            clmTipoDeLugar.Width = 125;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(23, 48);
+            btnAgregar.Location = new Point(26, 64);
+            btnAgregar.Margin = new Padding(3, 4, 3, 4);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(86, 31);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnReservar
             // 
-            btnReservar.Location = new Point(439, 249);
+            btnReservar.Location = new Point(502, 332);
+            btnReservar.Margin = new Padding(3, 4, 3, 4);
             btnReservar.Name = "btnReservar";
-            btnReservar.Size = new Size(75, 23);
+            btnReservar.Size = new Size(86, 31);
             btnReservar.TabIndex = 2;
             btnReservar.Text = "Reservar";
             btnReservar.UseVisualStyleBackColor = true;
             // 
             // btnHistorial
             // 
-            btnHistorial.Location = new Point(23, 135);
+            btnHistorial.Location = new Point(26, 180);
+            btnHistorial.Margin = new Padding(3, 4, 3, 4);
             btnHistorial.Name = "btnHistorial";
-            btnHistorial.Size = new Size(75, 23);
+            btnHistorial.Size = new Size(86, 31);
             btnHistorial.TabIndex = 3;
             btnHistorial.Text = "Historial";
             btnHistorial.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(23, 106);
+            btnEliminar.Location = new Point(26, 141);
+            btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.Size = new Size(86, 31);
             btnEliminar.TabIndex = 4;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(23, 77);
+            btnModificar.Location = new Point(26, 103);
+            btnModificar.Margin = new Padding(3, 4, 3, 4);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(75, 23);
+            btnModificar.Size = new Size(86, 31);
             btnModificar.TabIndex = 5;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
             // 
             // SeleccionReservas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(632, 338);
+            ClientSize = new Size(722, 451);
             Controls.Add(btnModificar);
             Controls.Add(btnEliminar);
             Controls.Add(btnHistorial);
             Controls.Add(btnReservar);
             Controls.Add(btnAgregar);
             Controls.Add(dataGridView1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "SeleccionReservas";
             Text = "SeleccionReservas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

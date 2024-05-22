@@ -35,5 +35,12 @@ namespace Coworking_f
             conexionBD.crearConexion();
 
         }
+
+
+        private void crearPerfilToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Registro frmRegistro = new Registro();
+            frmRegistro.Show();
+        }
     }
 }

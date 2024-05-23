@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coworking_f.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,22 @@ namespace Coworking_f
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            clsAgregar agregarEspacio = new clsAgregar();
 
+            agregarEspacio.IDEspacio1 = Convert.ToInt32(txtIDEspacio.Text);
+            agregarEspacio.NombreEspacio1 = txtNombreEspacio.Text;
+            agregarEspacio.DescripcionEspacio1 = txtDescripcionEspacio.Text;
+
+            int retornar = clsFunciones.AgregarEspacio(agregarEspacio);
+
+            if (retornar > 0)
+            {
+                MessageBox.Show("El espacio se creo correctamente :D");
+            }
+            else
+            {
+                MessageBox.Show("EROR");
+            }
         }
     }
 }

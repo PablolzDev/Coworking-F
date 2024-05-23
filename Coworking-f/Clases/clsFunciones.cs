@@ -37,8 +37,31 @@ namespace Coworking_f.Clases
 
             return retorno;  // Devolver el resultado de la inserción
         }
-
         //Metodo para insertar un espacio a la base de datos
+        public static int AgregarEspacio(clsAgregar add)
+        {
+            int retornar = 0;
 
+            using(var conexionA = conexionBD.crearConexion()) //Conexion con la base de datos 
+            {
+                if (conexionA.State != System.Data.ConnectionState.Open) //Verifica que se concetos a la base de datos
+                {
+                    conexionA.Open();
+                }
+                
+                var Agregar = "INSERT INTO CoworkingSpaces (SpaceID, SpaceName, SpaceDescription, SpaceAvailability)" +
+                    "VALUES (@SpaceID, @SpaceName, @SpaceDescription, @SpaceAvailability)";
+
+                //Asignacion de los valores 
+                var comando = new MySqlCommand(Agregar, conexionA);
+                comando.Parameters.AddWithValue("@SpaceID", add.IDEspacio1);
+                comando.Parameters.AddWithValue("@SpaceName", add.NombreEspacio1);
+                comando.Parameters.AddWithValue("@SpaceDescription", add.DescripcionEspacio1);
+                comando.Parameters.AddWithValue("@SpaceAvailability", add.DescripcionEspacio1);
+
+                retornar = comando.ExecuteNonQuery(); //Ejecuta la insercion de los datos 
+            }
+            return retornar; //Devuel los datos de la insercion
+        }
     }
 }

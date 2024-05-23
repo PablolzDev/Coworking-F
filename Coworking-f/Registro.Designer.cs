@@ -68,7 +68,7 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(488, 89);
+            txtApellido.Location = new Point(489, 89);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(125, 27);
             txtApellido.TabIndex = 3;

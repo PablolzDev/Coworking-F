@@ -29,52 +29,58 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            clmUbicacion = new DataGridViewTextBoxColumn();
-            clmFecha = new DataGridViewTextBoxColumn();
-            clmTipoDeLugar = new DataGridViewTextBoxColumn();
+            clmIDEspacio = new DataGridViewTextBoxColumn();
+            clmNombreEspacio = new DataGridViewTextBoxColumn();
+            clmDescripcionEspacio = new DataGridViewTextBoxColumn();
             btnAgregar = new Button();
             btnReservar = new Button();
             btnHistorial = new Button();
             btnEliminar = new Button();
             btnModificar = new Button();
+            lblIDEspacio = new Label();
+            txtIDEspacio = new TextBox();
+            lblNombreEspacio = new Label();
+            txtNombreEspacio = new TextBox();
+            lblDescripcionEspacio = new Label();
+            txtDescripcionEspacio = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmUbicacion, clmFecha, clmTipoDeLugar });
-            dataGridView1.Location = new Point(197, 64);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmIDEspacio, clmNombreEspacio, clmDescripcionEspacio });
+            dataGridView1.Location = new Point(238, 165);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(391, 200);
+            dataGridView1.Size = new Size(429, 200);
             dataGridView1.TabIndex = 0;
             // 
-            // clmUbicacion
+            // clmIDEspacio
             // 
-            clmUbicacion.HeaderText = "Ubicacion";
-            clmUbicacion.MinimumWidth = 6;
-            clmUbicacion.Name = "clmUbicacion";
-            clmUbicacion.Width = 125;
+            clmIDEspacio.HeaderText = "ID Espacio";
+            clmIDEspacio.MinimumWidth = 6;
+            clmIDEspacio.Name = "clmIDEspacio";
+            clmIDEspacio.Width = 125;
             // 
-            // clmFecha
+            // clmNombreEspacio
             // 
-            clmFecha.HeaderText = "Fecha";
-            clmFecha.MinimumWidth = 6;
-            clmFecha.Name = "clmFecha";
-            clmFecha.Width = 125;
+            clmNombreEspacio.HeaderText = "Nombre Espacio";
+            clmNombreEspacio.MinimumWidth = 6;
+            clmNombreEspacio.Name = "clmNombreEspacio";
+            clmNombreEspacio.Width = 125;
             // 
-            // clmTipoDeLugar
+            // clmDescripcionEspacio
             // 
-            clmTipoDeLugar.HeaderText = "Tipo de lugar";
-            clmTipoDeLugar.MinimumWidth = 6;
-            clmTipoDeLugar.Name = "clmTipoDeLugar";
-            clmTipoDeLugar.Width = 125;
+            clmDescripcionEspacio.HeaderText = "Descripcion Espacio";
+            clmDescripcionEspacio.MinimumWidth = 6;
+            clmDescripcionEspacio.Name = "clmDescripcionEspacio";
+            clmDescripcionEspacio.Width = 125;
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(26, 64);
+            btnAgregar.Location = new Point(47, 165);
             btnAgregar.Margin = new Padding(3, 4, 3, 4);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(86, 31);
@@ -85,17 +91,17 @@
             // 
             // btnReservar
             // 
-            btnReservar.Location = new Point(502, 332);
+            btnReservar.Location = new Point(475, 382);
             btnReservar.Margin = new Padding(3, 4, 3, 4);
             btnReservar.Name = "btnReservar";
-            btnReservar.Size = new Size(86, 31);
+            btnReservar.Size = new Size(181, 44);
             btnReservar.TabIndex = 2;
             btnReservar.Text = "Reservar";
             btnReservar.UseVisualStyleBackColor = true;
             // 
             // btnHistorial
             // 
-            btnHistorial.Location = new Point(26, 180);
+            btnHistorial.Location = new Point(47, 334);
             btnHistorial.Margin = new Padding(3, 4, 3, 4);
             btnHistorial.Name = "btnHistorial";
             btnHistorial.Size = new Size(86, 31);
@@ -105,7 +111,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(26, 141);
+            btnEliminar.Location = new Point(47, 273);
             btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(86, 31);
@@ -115,7 +121,7 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(26, 103);
+            btnModificar.Location = new Point(47, 218);
             btnModificar.Margin = new Padding(3, 4, 3, 4);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(86, 31);
@@ -123,11 +129,66 @@
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
             // 
+            // lblIDEspacio
+            // 
+            lblIDEspacio.AutoSize = true;
+            lblIDEspacio.Location = new Point(79, 44);
+            lblIDEspacio.Name = "lblIDEspacio";
+            lblIDEspacio.Size = new Size(107, 20);
+            lblIDEspacio.TabIndex = 6;
+            lblIDEspacio.Text = "ID del espacio:";
+            // 
+            // txtIDEspacio
+            // 
+            txtIDEspacio.Location = new Point(221, 41);
+            txtIDEspacio.Name = "txtIDEspacio";
+            txtIDEspacio.Size = new Size(125, 27);
+            txtIDEspacio.TabIndex = 7;
+            // 
+            // lblNombreEspacio
+            // 
+            lblNombreEspacio.AutoSize = true;
+            lblNombreEspacio.Location = new Point(365, 44);
+            lblNombreEspacio.Name = "lblNombreEspacio";
+            lblNombreEspacio.Size = new Size(147, 20);
+            lblNombreEspacio.TabIndex = 8;
+            lblNombreEspacio.Text = "Nombre del espacio:";
+            // 
+            // txtNombreEspacio
+            // 
+            txtNombreEspacio.Location = new Point(531, 41);
+            txtNombreEspacio.Name = "txtNombreEspacio";
+            txtNombreEspacio.Size = new Size(125, 27);
+            txtNombreEspacio.TabIndex = 9;
+            // 
+            // lblDescripcionEspacio
+            // 
+            lblDescripcionEspacio.AutoSize = true;
+            lblDescripcionEspacio.Location = new Point(79, 105);
+            lblDescripcionEspacio.Name = "lblDescripcionEspacio";
+            lblDescripcionEspacio.Size = new Size(177, 20);
+            lblDescripcionEspacio.TabIndex = 10;
+            lblDescripcionEspacio.Text = "Descripcion del espcacio:";
+            // 
+            // txtDescripcionEspacio
+            // 
+            txtDescripcionEspacio.Location = new Point(300, 98);
+            txtDescripcionEspacio.Name = "txtDescripcionEspacio";
+            txtDescripcionEspacio.Size = new Size(356, 27);
+            txtDescripcionEspacio.TabIndex = 11;
+            txtDescripcionEspacio.Text = " ";
+            // 
             // SeleccionReservas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(722, 451);
+            ClientSize = new Size(770, 451);
+            Controls.Add(txtDescripcionEspacio);
+            Controls.Add(lblDescripcionEspacio);
+            Controls.Add(txtNombreEspacio);
+            Controls.Add(lblNombreEspacio);
+            Controls.Add(txtIDEspacio);
+            Controls.Add(lblIDEspacio);
             Controls.Add(btnModificar);
             Controls.Add(btnEliminar);
             Controls.Add(btnHistorial);
@@ -138,18 +199,25 @@
             Text = "SeleccionReservas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn clmUbicacion;
-        private DataGridViewTextBoxColumn clmFecha;
-        private DataGridViewTextBoxColumn clmTipoDeLugar;
         private Button btnAgregar;
         private Button btnReservar;
         private Button btnHistorial;
         private Button btnEliminar;
         private Button btnModificar;
+        private Label lblIDEspacio;
+        private TextBox txtIDEspacio;
+        private Label lblNombreEspacio;
+        private TextBox txtNombreEspacio;
+        private Label lblDescripcionEspacio;
+        private TextBox txtDescripcionEspacio;
+        private DataGridViewTextBoxColumn clmIDEspacio;
+        private DataGridViewTextBoxColumn clmNombreEspacio;
+        private DataGridViewTextBoxColumn clmDescripcionEspacio;
     }
 }

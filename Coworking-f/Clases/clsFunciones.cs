@@ -9,7 +9,7 @@ namespace Coworking_f.Clases
 {
     internal class clsFunciones
     {
-        //Metodo para insertar informacion a la bd
+        //Metodo para insertar informacion a la base de datos
         public static int InsertarDatos(clsDatosRegistro add)
         {
             int retorno = 0;
@@ -37,5 +37,8 @@ namespace Coworking_f.Clases
 
             return retorno;  // Devolver el resultado de la inserción
         }
+
+        //Metodo para insertar un espacio a la base de datos
+
     }
 }

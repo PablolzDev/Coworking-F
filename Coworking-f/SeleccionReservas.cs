@@ -43,5 +43,10 @@ namespace Coworking_f
                 MessageBox.Show("EROR");
             }
         }
+
+        private void btnVolverSeleccionReservas_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

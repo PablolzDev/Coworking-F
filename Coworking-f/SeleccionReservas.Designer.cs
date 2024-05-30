@@ -45,6 +45,7 @@
             txtDescripcionEspacio = new TextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            btnVolverSeleccionReservas = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -197,16 +198,27 @@
             pictureBox2.Image = Properties.Resources.ReformaFondo;
             pictureBox2.Location = new Point(9, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(796, 427);
+            pictureBox2.Size = new Size(794, 427);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
+            // 
+            // btnVolverSeleccionReservas
+            // 
+            btnVolverSeleccionReservas.Location = new Point(289, 382);
+            btnVolverSeleccionReservas.Name = "btnVolverSeleccionReservas";
+            btnVolverSeleccionReservas.Size = new Size(134, 39);
+            btnVolverSeleccionReservas.TabIndex = 14;
+            btnVolverSeleccionReservas.Text = "Volver";
+            btnVolverSeleccionReservas.UseVisualStyleBackColor = true;
+            btnVolverSeleccionReservas.Click += btnVolverSeleccionReservas_Click;
             // 
             // SeleccionReservas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(815, 451);
+            Controls.Add(btnVolverSeleccionReservas);
             Controls.Add(pictureBox1);
             Controls.Add(txtDescripcionEspacio);
             Controls.Add(lblDescripcionEspacio);
@@ -249,5 +261,6 @@
         private DataGridViewTextBoxColumn clmDescripcionEspacio;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Button btnVolverSeleccionReservas;
     }
 }

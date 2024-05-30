@@ -16,8 +16,7 @@ namespace Coworking_f
         public Inicio()
         {
             InitializeComponent();
-            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FodoProyectoFinal.png");
-            this.BackgroundImage = img;
+            
         }
 
 

@@ -73,9 +73,49 @@ namespace Coworking_f.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoHerramientas {
+            get {
+                object obj = ResourceManager.GetObject("LogoHerramientas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoProyectoFinal {
             get {
                 object obj = ResourceManager.GetObject("LogoProyectoFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReformaFondo {
+            get {
+                object obj = ResourceManager.GetObject("ReformaFondo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReformaFondo1 {
+            get {
+                object obj = ResourceManager.GetObject("ReformaFondo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ReformaLogo___copia {
+            get {
+                object obj = ResourceManager.GetObject("ReformaLogo - copia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

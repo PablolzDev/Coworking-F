@@ -43,7 +43,11 @@
             txtNombreEspacio = new TextBox();
             lblDescripcionEspacio = new Label();
             txtDescripcionEspacio = new TextBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -178,11 +182,32 @@
             txtDescripcionEspacio.TabIndex = 11;
             txtDescripcionEspacio.Text = " ";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LogoHerramientas;
+            pictureBox1.Location = new Point(668, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(135, 136);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.ReformaFondo;
+            pictureBox2.Location = new Point(9, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(796, 427);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            // 
             // SeleccionReservas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(770, 451);
+            ClientSize = new Size(815, 451);
+            Controls.Add(pictureBox1);
             Controls.Add(txtDescripcionEspacio);
             Controls.Add(lblDescripcionEspacio);
             Controls.Add(txtNombreEspacio);
@@ -195,9 +220,12 @@
             Controls.Add(btnReservar);
             Controls.Add(btnAgregar);
             Controls.Add(dataGridView1);
+            Controls.Add(pictureBox2);
             Name = "SeleccionReservas";
             Text = "SeleccionReservas";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -219,5 +247,7 @@
         private DataGridViewTextBoxColumn clmIDEspacio;
         private DataGridViewTextBoxColumn clmNombreEspacio;
         private DataGridViewTextBoxColumn clmDescripcionEspacio;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

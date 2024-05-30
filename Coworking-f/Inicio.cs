@@ -16,7 +16,11 @@ namespace Coworking_f
         public Inicio()
         {
             InitializeComponent();
+            Bitmap img = new Bitmap(Application.StartupPath + @"\img\FodoProyectoFinal.png");
+            this.BackgroundImage = img;
         }
+
+
 
         private void btnRegistro_Click(object sender, EventArgs e)
         {
@@ -41,6 +45,11 @@ namespace Coworking_f
         {
             Registro frmRegistro = new Registro();
             frmRegistro.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -18,17 +18,14 @@ namespace Coworking_f
             InitializeComponent();
 
         }
-
-
-
         private void btnRegistro_Click(object sender, EventArgs e)
         {
-            Registro frmRegistro = new Registro();
-            frmRegistro.Show();
+            //No se usa
         }
 
         private void btnContinuar_Click(object sender, EventArgs e)
         {
+            //Deja pasar al usuario al formulario para seleccionar su espacio
             SeleccionReservas frmSeleccionReservas = new SeleccionReservas();
             frmSeleccionReservas.Show();
         }
@@ -50,23 +47,24 @@ namespace Coworking_f
 
         private void crearPerfilToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Manda al usuario al formulario de registro
             Registro frmRegistro = new Registro();
             frmRegistro.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            //No se usa
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
+            //No se usa
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            //No se usa
         }
 
         private void txtCorreoCliente_TextChanged(object sender, EventArgs e)

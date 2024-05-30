@@ -64,7 +64,5 @@ namespace Coworking_f.Clases
             }
             return retornar; //Devuel los datos de la insercion
         }
-
-        //Metodo para modificar registros
     }
 }

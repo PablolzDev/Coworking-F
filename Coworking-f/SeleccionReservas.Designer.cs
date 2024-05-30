@@ -103,6 +103,7 @@
             btnReservar.TabIndex = 2;
             btnReservar.Text = "Reservar";
             btnReservar.UseVisualStyleBackColor = true;
+            btnReservar.Click += btnReservar_Click;
             // 
             // btnHistorial
             // 

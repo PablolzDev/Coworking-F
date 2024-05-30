@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dtgGrid = new DataGridView();
             clmIDEspacio = new DataGridViewTextBoxColumn();
             clmNombreEspacio = new DataGridViewTextBoxColumn();
             clmDescripcionEspacio = new DataGridViewTextBoxColumn();
@@ -45,21 +45,21 @@
             txtDescripcionEspacio = new TextBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dtgGrid
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { clmIDEspacio, clmNombreEspacio, clmDescripcionEspacio });
-            dataGridView1.Location = new Point(238, 165);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(429, 200);
-            dataGridView1.TabIndex = 0;
+            dtgGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgGrid.Columns.AddRange(new DataGridViewColumn[] { clmIDEspacio, clmNombreEspacio, clmDescripcionEspacio });
+            dtgGrid.Location = new Point(238, 165);
+            dtgGrid.Margin = new Padding(3, 4, 3, 4);
+            dtgGrid.Name = "dtgGrid";
+            dtgGrid.RowHeadersWidth = 51;
+            dtgGrid.Size = new Size(429, 200);
+            dtgGrid.TabIndex = 0;
             // 
             // clmIDEspacio
             // 
@@ -219,11 +219,11 @@
             Controls.Add(btnHistorial);
             Controls.Add(btnReservar);
             Controls.Add(btnAgregar);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtgGrid);
             Controls.Add(pictureBox2);
             Name = "SeleccionReservas";
             Text = "SeleccionReservas";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -232,7 +232,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dtgGrid;
         private Button btnAgregar;
         private Button btnReservar;
         private Button btnHistorial;

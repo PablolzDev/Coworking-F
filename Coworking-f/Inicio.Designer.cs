@@ -40,12 +40,12 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             groupBox1 = new GroupBox();
+            lblCorreoAdmin = new Label();
             txtCorreoAdmin = new TextBox();
+            txtContraseñaAdmin = new TextBox();
             lblIDAdmin = new Label();
             txtIDAdmin = new TextBox();
             lblContraseñaAdmin = new Label();
-            txtContraseñaAdmin = new TextBox();
-            lblCorreoAdmin = new Label();
             groupBox2 = new GroupBox();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -101,7 +101,7 @@
             // btnContinuar
             // 
             btnContinuar.ForeColor = SystemColors.ActiveCaptionText;
-            btnContinuar.Location = new Point(290, 384);
+            btnContinuar.Location = new Point(229, 385);
             btnContinuar.Name = "btnContinuar";
             btnContinuar.Size = new Size(150, 66);
             btnContinuar.TabIndex = 3;
@@ -115,7 +115,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { aunNoTienesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(805, 28);
+            menuStrip1.Size = new Size(738, 28);
             menuStrip1.TabIndex = 4;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -136,7 +136,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LogoHerramientas;
-            pictureBox1.Location = new Point(665, 31);
+            pictureBox1.Location = new Point(595, 31);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(135, 136);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -149,7 +149,7 @@
             pictureBox2.Image = Properties.Resources.ReformaFondo;
             pictureBox2.Location = new Point(4, 30);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(796, 483);
+            pictureBox2.Size = new Size(726, 483);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
@@ -163,12 +163,22 @@
             groupBox1.Controls.Add(lblIDAdmin);
             groupBox1.Controls.Add(txtIDAdmin);
             groupBox1.Controls.Add(lblContraseñaAdmin);
-            groupBox1.Location = new Point(399, 73);
+            groupBox1.Location = new Point(349, 73);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(203, 283);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             groupBox1.Text = "Administrador";
+            // 
+            // lblCorreoAdmin
+            // 
+            lblCorreoAdmin.AutoSize = true;
+            lblCorreoAdmin.ForeColor = SystemColors.ActiveCaptionText;
+            lblCorreoAdmin.Location = new Point(33, 30);
+            lblCorreoAdmin.Name = "lblCorreoAdmin";
+            lblCorreoAdmin.Size = new Size(54, 20);
+            lblCorreoAdmin.TabIndex = 0;
+            lblCorreoAdmin.Text = "Correo";
             // 
             // txtCorreoAdmin
             // 
@@ -176,6 +186,13 @@
             txtCorreoAdmin.Name = "txtCorreoAdmin";
             txtCorreoAdmin.Size = new Size(125, 27);
             txtCorreoAdmin.TabIndex = 1;
+            // 
+            // txtContraseñaAdmin
+            // 
+            txtContraseñaAdmin.Location = new Point(33, 235);
+            txtContraseñaAdmin.Name = "txtContraseñaAdmin";
+            txtContraseñaAdmin.Size = new Size(125, 27);
+            txtContraseñaAdmin.TabIndex = 5;
             // 
             // lblIDAdmin
             // 
@@ -204,23 +221,6 @@
             lblContraseñaAdmin.TabIndex = 4;
             lblContraseñaAdmin.Text = "Contraseña";
             // 
-            // txtContraseñaAdmin
-            // 
-            txtContraseñaAdmin.Location = new Point(33, 235);
-            txtContraseñaAdmin.Name = "txtContraseñaAdmin";
-            txtContraseñaAdmin.Size = new Size(125, 27);
-            txtContraseñaAdmin.TabIndex = 5;
-            // 
-            // lblCorreoAdmin
-            // 
-            lblCorreoAdmin.AutoSize = true;
-            lblCorreoAdmin.ForeColor = SystemColors.ActiveCaptionText;
-            lblCorreoAdmin.Location = new Point(33, 30);
-            lblCorreoAdmin.Name = "lblCorreoAdmin";
-            lblCorreoAdmin.Size = new Size(54, 20);
-            lblCorreoAdmin.TabIndex = 0;
-            lblCorreoAdmin.Text = "Correo";
-            // 
             // groupBox2
             // 
             groupBox2.BackgroundImage = Properties.Resources.ReformaFondo;
@@ -228,7 +228,7 @@
             groupBox2.Controls.Add(txtCorreoCliente);
             groupBox2.Controls.Add(txtContraseñaCliente);
             groupBox2.Controls.Add(lblContraseñaCliente);
-            groupBox2.Location = new Point(114, 73);
+            groupBox2.Location = new Point(62, 73);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(206, 283);
             groupBox2.TabIndex = 8;
@@ -239,7 +239,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(805, 518);
+            ClientSize = new Size(738, 518);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(pictureBox1);

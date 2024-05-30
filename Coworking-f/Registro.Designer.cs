@@ -48,7 +48,7 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(189, 65);
+            lblNombre.Location = new Point(58, 69);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(64, 20);
             lblNombre.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(189, 98);
+            txtNombre.Location = new Point(58, 102);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(125, 27);
             txtNombre.TabIndex = 1;
@@ -64,7 +64,7 @@
             // lblApellido
             // 
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(467, 65);
+            lblApellido.Location = new Point(336, 69);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(66, 20);
             lblApellido.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(468, 98);
+            txtApellido.Location = new Point(337, 102);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(125, 27);
             txtApellido.TabIndex = 3;
@@ -80,7 +80,7 @@
             // lblIdentificacion
             // 
             lblIdentificacion.AutoSize = true;
-            lblIdentificacion.Location = new Point(189, 160);
+            lblIdentificacion.Location = new Point(58, 164);
             lblIdentificacion.Name = "lblIdentificacion";
             lblIdentificacion.Size = new Size(99, 20);
             lblIdentificacion.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // txtIdentificacion
             // 
-            txtIdentificacion.Location = new Point(189, 188);
+            txtIdentificacion.Location = new Point(58, 192);
             txtIdentificacion.Name = "txtIdentificacion";
             txtIdentificacion.Size = new Size(125, 27);
             txtIdentificacion.TabIndex = 5;
@@ -96,7 +96,7 @@
             // lblCorreo
             // 
             lblCorreo.AutoSize = true;
-            lblCorreo.Location = new Point(467, 160);
+            lblCorreo.Location = new Point(336, 164);
             lblCorreo.Name = "lblCorreo";
             lblCorreo.Size = new Size(54, 20);
             lblCorreo.TabIndex = 6;
@@ -104,7 +104,7 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(468, 188);
+            txtCorreo.Location = new Point(337, 192);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(125, 27);
             txtCorreo.TabIndex = 7;
@@ -112,7 +112,7 @@
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Location = new Point(189, 245);
+            lblContraseña.Location = new Point(58, 249);
             lblContraseña.Name = "lblContraseña";
             lblContraseña.Size = new Size(83, 20);
             lblContraseña.TabIndex = 8;
@@ -120,14 +120,14 @@
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(189, 277);
+            txtContraseña.Location = new Point(58, 281);
             txtContraseña.Name = "txtContraseña";
             txtContraseña.Size = new Size(125, 27);
             txtContraseña.TabIndex = 9;
             // 
             // btnCrearPerfilCliente
             // 
-            btnCrearPerfilCliente.Location = new Point(326, 361);
+            btnCrearPerfilCliente.Location = new Point(205, 348);
             btnCrearPerfilCliente.Name = "btnCrearPerfilCliente";
             btnCrearPerfilCliente.Size = new Size(141, 41);
             btnCrearPerfilCliente.TabIndex = 10;
@@ -138,7 +138,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.LogoHerramientas;
-            pictureBox1.Location = new Point(665, 13);
+            pictureBox1.Location = new Point(487, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 112);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -147,10 +147,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.ReformaFondo1;
-            pictureBox2.Location = new Point(5, 6);
+            pictureBox2.Image = Properties.Resources.ReformaFondo;
+            pictureBox2.Location = new Point(12, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(785, 465);
+            pictureBox2.Size = new Size(599, 459);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
@@ -159,7 +159,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 483);
+            ClientSize = new Size(623, 483);
             Controls.Add(pictureBox1);
             Controls.Add(btnCrearPerfilCliente);
             Controls.Add(lblNombre);

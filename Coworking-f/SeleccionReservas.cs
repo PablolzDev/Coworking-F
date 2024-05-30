@@ -28,6 +28,12 @@ namespace Coworking_f
 
             int retornar = clsFunciones.AgregarEspacio(agregarEspacio);
 
+            dtgGrid.Rows.Add(txtIDEspacio.Text, txtNombreEspacio.Text, txtDescripcionEspacio.Text);
+
+            txtIDEspacio.Clear();
+            txtNombreEspacio.Clear();
+            txtDescripcionEspacio.Clear();
+
             if (retornar > 0)
             {
                 MessageBox.Show("El espacio se creo correctamente :D");

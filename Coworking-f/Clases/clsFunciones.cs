@@ -42,13 +42,13 @@ namespace Coworking_f.Clases
         {
             int retornar = 0;
 
-            using(var conexionA = conexionBD.crearConexion()) //Conexion con la base de datos 
+            using (var conexionA = conexionBD.crearConexion()) //Conexion con la base de datos 
             {
                 if (conexionA.State != System.Data.ConnectionState.Open) //Verifica que se concetos a la base de datos
                 {
                     conexionA.Open();
                 }
-                
+
                 var Agregar = "INSERT INTO CoworkingSpaces (SpaceID, SpaceName, SpaceDescription, SpaceAvailability)" +
                     "VALUES (@SpaceID, @SpaceName, @SpaceDescription, @SpaceAvailability)";
 
@@ -57,11 +57,13 @@ namespace Coworking_f.Clases
                 comando.Parameters.AddWithValue("@SpaceID", add.IDEspacio1);
                 comando.Parameters.AddWithValue("@SpaceName", add.NombreEspacio1);
                 comando.Parameters.AddWithValue("@SpaceDescription", add.DescripcionEspacio1);
-                comando.Parameters.AddWithValue("@SpaceAvailability", add.DescripcionEspacio1);
+                comando.Parameters.AddWithValue("@SpaceAvailability", add.DisponibilidadEspacio1); // Corregido
 
                 retornar = comando.ExecuteNonQuery(); //Ejecuta la insercion de los datos 
             }
             return retornar; //Devuel los datos de la insercion
         }
+
+        //Metodo para modificar registros
     }
 }

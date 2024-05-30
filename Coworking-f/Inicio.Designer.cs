@@ -60,6 +60,7 @@
             txtContraseñaCliente.Name = "txtContraseñaCliente";
             txtContraseñaCliente.Size = new Size(125, 27);
             txtContraseñaCliente.TabIndex = 3;
+            txtContraseñaCliente.TextChanged += txtContraseñaCliente_TextChanged;
             // 
             // lblContraseñaCliente
             // 
@@ -77,6 +78,7 @@
             txtCorreoCliente.Name = "txtCorreoCliente";
             txtCorreoCliente.Size = new Size(125, 27);
             txtCorreoCliente.TabIndex = 1;
+            txtCorreoCliente.TextChanged += txtCorreoCliente_TextChanged;
             // 
             // lblCorreoCliente
             // 
@@ -138,7 +140,7 @@
             pictureBox1.Image = Properties.Resources.LogoHerramientas;
             pictureBox1.Location = new Point(595, 31);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(135, 136);
+            pictureBox1.Size = new Size(131, 136);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -149,10 +151,11 @@
             pictureBox2.Image = Properties.Resources.ReformaFondo;
             pictureBox2.Location = new Point(4, 30);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(726, 483);
+            pictureBox2.Size = new Size(722, 476);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 6;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // groupBox1
             // 
@@ -169,6 +172,7 @@
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             groupBox1.Text = "Administrador";
+            groupBox1.Enter += groupBox1_Enter;
             // 
             // lblCorreoAdmin
             // 

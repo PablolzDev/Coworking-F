@@ -16,7 +16,7 @@ namespace Coworking_f
         public Inicio()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -36,8 +36,16 @@ namespace Coworking_f
         private void Inicio_Load(object sender, EventArgs e)
         {
             conexionBD.crearConexion();
-
+            groupBox1.Enabled = false;
+            btnContinuar.Enabled = false;
         }
+
+        private void ValidarCampos()
+        {
+            var vr = !string.IsNullOrEmpty(txtCorreoCliente.Text) &&
+                !string.IsNullOrEmpty(txtContraseñaCliente.Text);
+            btnContinuar.Enabled = true;
+        } 
 
 
         private void crearPerfilToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,7 +56,27 @@ namespace Coworking_f
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCorreoCliente_TextChanged(object sender, EventArgs e)
+        {
+            ValidarCampos();
+        }
+
+        private void txtContraseñaCliente_TextChanged(object sender, EventArgs e)
+        {
+            ValidarCampos();
         }
     }
 }

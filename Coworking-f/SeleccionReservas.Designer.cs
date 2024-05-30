@@ -149,6 +149,7 @@
             txtIDEspacio.Name = "txtIDEspacio";
             txtIDEspacio.Size = new Size(125, 27);
             txtIDEspacio.TabIndex = 7;
+            txtIDEspacio.KeyPress += txtIDEspacio_KeyPress;
             // 
             // lblNombreEspacio
             // 

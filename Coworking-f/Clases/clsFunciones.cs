@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient; //Libreria para MySql
+using System.Data;
 
 namespace Coworking_f.Clases
 {

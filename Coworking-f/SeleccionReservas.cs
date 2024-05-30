@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data;
+
 
 namespace Coworking_f
 {
@@ -17,6 +20,7 @@ namespace Coworking_f
         {
             InitializeComponent();
         }
+        clsFunciones Funcion = new clsFunciones();
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -34,6 +38,7 @@ namespace Coworking_f
             txtNombreEspacio.Clear();
             txtDescripcionEspacio.Clear();
 
+
             if (retornar > 0)
             {
                 MessageBox.Show("El espacio se creo correctamente :D");
@@ -48,5 +53,16 @@ namespace Coworking_f
         {
             this.Close();
         }
+
+        private void txtIDEspacio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+        }
     }
-}
+
